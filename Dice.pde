@@ -43,25 +43,39 @@ class Die {
       ellipse(x + 25, y + 25, 10, 10);
     }
     else if(f == 2) {
-      fill(255);
-      rect(x, y, 50, 50);
       fill(0);
-      ellipse(x + 25, y + 25, 10, 10);
+      ellipse(x + 15, y + 15, 10, 10);
+      ellipse(x + 35, y + 35, 10, 10);
     }
     else if(f == 3) {
-      fill(255);
-      rect(x, y, 50, 50);
       fill(0);
+      ellipse(x + 40, y + 10, 10, 10);
       ellipse(x + 25, y + 25, 10, 10);
+      ellipse(x + 10, y + 40, 10, 10);
     }
     else if(f == 4) {
-      rect(x, y, 50, 50);
+      fill(0);
+      ellipse(x + 15, y + 15, 10, 10);
+      ellipse(x + 15, y + 35, 10, 10);
+      ellipse(x + 35, y + 15, 10, 10);
+      ellipse(x + 35, y + 35, 10, 10);
     }
     else if(f == 5) {
-      rect(x, y, 50, 50);
+      fill(0);
+      ellipse(x + 10, y + 10, 10, 10);
+      ellipse(x + 10, y + 40, 10, 10);
+      ellipse(x + 40, y + 10, 10, 10);
+      ellipse(x + 40, y + 40, 10, 10);
+      ellipse(x + 25, y + 25, 10, 10);
     }
     else{
-      rect(x, y, 50, 50);
+      fill(0);
+      ellipse(x + 15, y + 10, 10, 10);
+      ellipse(x + 35, y + 10, 10, 10);
+      ellipse(x + 15, y + 25, 10, 10);
+      ellipse(x + 35, y + 25, 10, 10);
+      ellipse(x + 15, y + 40, 10, 10);
+      ellipse(x + 35, y + 40, 10, 10);
     }
   }
 }
