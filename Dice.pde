@@ -1,5 +1,7 @@
+int sum;
+
 void setup() {
-  size(550,550);
+  size(550,600);
   noLoop();
   //Die aDie = new Die(); idk why this exists
 }
@@ -13,6 +15,7 @@ void draw(){
       aDie.show();
     }
   }
+  System.out.println(sum);
 }
 
 void mousePressed(){
@@ -37,21 +40,26 @@ class Die {
   
   void show() {
     fill(255);
-    rect(x, y, 50, 50);    
+    rect(x, y, 50, 50);
+    int n = 0;
+    int sum = 0 + n;
     if(f == 1) {
       fill(0);
       ellipse(x + 25, y + 25, 10, 10);
+      n = 1;
     }
     else if(f == 2) {
       fill(0);
       ellipse(x + 15, y + 15, 10, 10);
       ellipse(x + 35, y + 35, 10, 10);
+      n = 2;
     }
     else if(f == 3) {
       fill(0);
       ellipse(x + 40, y + 10, 10, 10);
       ellipse(x + 25, y + 25, 10, 10);
       ellipse(x + 10, y + 40, 10, 10);
+      n = 3;
     }
     else if(f == 4) {
       fill(0);
@@ -59,6 +67,7 @@ class Die {
       ellipse(x + 15, y + 35, 10, 10);
       ellipse(x + 35, y + 15, 10, 10);
       ellipse(x + 35, y + 35, 10, 10);
+      n = 4;
     }
     else if(f == 5) {
       fill(0);
@@ -67,6 +76,7 @@ class Die {
       ellipse(x + 40, y + 10, 10, 10);
       ellipse(x + 40, y + 40, 10, 10);
       ellipse(x + 25, y + 25, 10, 10);
+      n = 5;
     }
     else{
       fill(0);
@@ -76,6 +86,7 @@ class Die {
       ellipse(x + 35, y + 25, 10, 10);
       ellipse(x + 15, y + 40, 10, 10);
       ellipse(x + 35, y + 40, 10, 10);
+      n = 6;
     }
   }
 }
