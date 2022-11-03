@@ -1,7 +1,7 @@
 int n = 0;
 int sum = 0;
-int numRows = 1; //input value here for number of rows
-int numCols = 4; //input value here for number of columns
+int numRows = 9; //input value here for number of rows
+int numCols = 9; //input value here for number of columns
 float average = 0;
 
 void settings() {
